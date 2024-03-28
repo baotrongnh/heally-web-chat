@@ -1,0 +1,237 @@
+.app {
+     background-color: rgba(255, 98, 0, 0.781);
+}
+
+.container {
+     display: flex;
+     justify-content: center;
+}
+
+.header {
+     width: 5.5rem;
+     height: 100vh;
+     display: flex;
+     position: relative;
+     box-shadow: 0 0 5px rgb(169, 45, 0);
+}
+
+.header .menu-icon-box {
+     width: 5.5rem;
+     height: 80%;
+     font-size: 2.5rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     align-self: center;
+     flex-direction: column;
+     margin: auto 0;
+}
+
+.header .logo {
+     position: absolute;
+     height: 5.5rem;
+     width: 5.5rem;
+     background-color: rgb(0, 255, 42);
+}
+
+.header .menu-icon-box .icon {
+     color: rgb(255, 255, 255);
+     width: 4.6rem;
+     height: 8.9rem;
+     text-align: center;
+     border-radius: 10px;
+     position: relative;
+     padding: 50% 0;
+}
+
+.menu-icon-box .icon i {
+}
+
+.menu-icon-box .current-tab i{
+     color: black;
+}
+
+.menu-icon-box .icon.current-tab i::after {
+     display: block;
+     content: "";
+     width: 7px;
+     height: 38px;
+     border-radius: 7px;
+     background-color: #171100;
+     position: absolute;
+     right: 0;
+     top: 26px;
+     margin-right: -4.3px;
+}
+
+.header .menu-icon-box .icon:hover {
+     background-color: orangered;
+     transition-duration: 0.5s;
+}
+
+/* container */
+.container .content {
+     background-color: white;
+     width: 97%;
+     height: 100vh;
+     display: flex;
+     margin: auto 0;
+}
+
+.container .left-sidebar {
+     width: 36.5rem;
+     height: 97%;
+     border-right: 0.5px solid rgba(128, 128, 128, 0.353);
+}
+
+.left-sidebar .search-bar {
+     width: 100%;
+     height: 5.6rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: sticky;
+}
+
+.left-sidebar .menu-icon {
+     height: 4rem;
+     width: 4rem;
+     display: inline-block;
+     font-size: 1.8rem;
+     margin-left: 1.2rem;
+     border-radius: 20px;
+}
+
+.left-sidebar .menu-icon:hover {
+     background-color: rgba(255, 68, 0, 0.263);
+}
+
+.left-sidebar .menu-icon .fa-bars {
+     line-height: 4rem;
+     padding: 0 1.2rem;
+     opacity: 60%;
+}
+
+.left-sidebar .search-box {
+     width: 27.6rem;
+     height: 4rem;
+     position: relative;
+     margin-right: 2rem;
+     opacity: 60%;
+     border: none;
+}
+
+.left-sidebar .search-box:hover {
+     opacity: 50%;
+}
+
+.left-sidebar .search {
+     font-size: 1.6rem;
+     width: 27.6rem;
+     height: 4rem;
+     border-radius: 40px;
+     border: none;
+     background-color: rgba(220, 219, 219, 0.512);
+     padding-left: 6.4rem;
+}
+
+.left-sidebar .search-box .fa-magnifying-glass {
+     font-size: 1.9rem;
+     position: absolute;
+     top: 1.1rem;
+     left: 1.9rem;
+     opacity: 60%;
+}
+
+.chats-list {
+     overflow-y: scroll;
+     height: 90%;
+}
+
+.chats-list .chat-item {
+     width: 100%;
+     height: 7.2rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid rgba(128, 128, 128, 0.159);
+}
+
+.chats-list .chat-item:hover {
+     background-color: rgba(128, 128, 128, 0.066);
+     transition-duration: 0.5s;
+}
+
+.chats-list .chat-item:hover .avatar-img {
+     box-shadow: 0 0 6px rgba(128, 128, 128, 0.447);
+     transition-duration: 0.3s;
+}
+
+.chat-item .text {
+     width: 26.8rem;
+     height: 4.6rem;
+}
+
+.chat-item .text-top {
+     display: flex;
+     width: 100%;
+     height: 2rem;
+}
+
+.chat-item .text-bottom {
+     display: flex;
+     width: 100%;
+     height: 2rem;
+}
+
+.chat-item .name {
+     width: 23rem;
+     line-height: 0px;
+     font-weight: bold;
+}
+
+.chat-item .time-last-msg {
+
+}
+
+.chat-item .last-msg {
+     font-size: 1.2rem;
+     width: 23rem;
+     color: #2a2929bc;
+}
+
+.chat-item .unread {
+     color: white;
+     height: 1.8rem;
+     width: 1.8rem;
+     background-color: rgb(247, 107, 20);
+     border-radius: 50%;
+     text-align: center;
+     line-height: 1.8rem;
+     margin-left: 0.7rem;
+}
+
+.status-unread {
+     color: black;
+     font-weight: bolder;
+}
+
+.chat-item .avatar {
+     margin: 0 1rem 0 2rem;
+     height: 4.8rem;
+     width: 4.8rem;
+}
+
+.chat-item .avatar-img {
+     height: 4.8rem;
+     width: 4.8rem;
+     object-fit: cover;
+     object-position: top center;
+     border-radius: 50%;
+}
+
+.msg-box {
+     width: calc(100% - 32.5rem);
+     height: 100%;
+}
+

@@ -153,8 +153,17 @@
 }
 
 .chats-list {
-     overflow-y: scroll;
-     height: 90%;
+     overflow-y: auto;
+     height: 94%;
+
+     overflow: auto;
+     overflow: -moz-scrollbars-none;
+     -ms-overflow-style: none;
+}
+
+.chats-list::-webkit-scrollbar { 
+     width: 0 !important;
+     display: none; 
 }
 
 .chats-list .chat-item {
@@ -317,6 +326,17 @@
      margin: 0 auto;
      width: 80%;
      height: 85%;
+
+     overflow-y: scroll;
+
+     overflow: auto;
+     overflow: -moz-scrollbars-none;
+     -ms-overflow-style: none;
+}
+
+.box-chat .chat-content::-webkit-scrollbar { 
+     width: 0 !important;
+     display: none; 
 }
 
 .box-chat .input-msg {
@@ -382,10 +402,11 @@
 
 .box-chat .text-container {
      width: 100%;
-     height: 100%;
+
      display: flex;
      flex-direction: column;
      justify-content: flex-end;
+
 }
 
 .box-chat .text-box {
@@ -414,4 +435,12 @@
 
 .msg-received {
      align-items: flex-start;
+}
+
+.fixed {
+     /* position: sticky; */
+}
+
+.footer-chat {
+     width: 100%;
 }

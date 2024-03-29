@@ -351,29 +351,54 @@
      font-size: 16px;
      border-radius: 8px;
      border: none;
+     
      padding-left: 50px;
      padding-bottom: 3.5px;
      box-shadow: 0 0 8px rgba(0, 0, 0, 0.208);
+     transition-duration: 0.5s;
 }
 
 .box-chat .typing-box:hover {
      box-shadow: 0 0 8px rgba(255, 128, 0, 0.959);
-     transition-duration: 0.5s;
+     
+}
+
+.input-msg .btn-emotion {
+
 }
 
 .box-chat .fa-face-smile {
      position: absolute;
      font-size: 21px;
-     top: 10px;
+     top: 9px;
      left: 10px;
+     background-color: white;
+     border: none;
 }
+
+.box-chat .fa-paper-plane {
+     background-color: white;
+     border: none;
+     color: rgba(255, 128, 0, 0.959);
+     position: absolute;
+     font-size: 21px;
+     top: 9px;
+     right: 17px;
+}
+
+.fa-paper-plane:active {
+     color: #f7990170;
+     transform: translateY(4px);
+   }
 
 .box-chat .fa-face-grin-tongue-squint {
      position: absolute;
      font-size: 21px;
-     top: 10px;
+     top: 9px;
      left: 10px;
      display: none;
+     background-color: white;
+     border: none;
 }
 
 .fa-face-smile {
@@ -382,6 +407,8 @@
 
 .fa-face-grin-tongue-squint {
      color: orangered;
+     background-color: white;
+     border: none;
 }
 
 .input-msg .btn-emotion:hover .fa-face-smile {
@@ -406,7 +433,6 @@
      display: flex;
      flex-direction: column;
      justify-content: flex-end;
-
 }
 
 .box-chat .text-box {

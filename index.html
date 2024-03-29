@@ -1,364 +1,58 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Chat</title>
+     <title>Login</title>
 
-     <link rel="stylesheet" href="assets/css/base.css">
-     <link rel="stylesheet" href="assets/css/main.css">
+     <link rel="stylesheet" href="assets/css/login-style.css">
      <link rel="stylesheet" href="assets/css/reset.css">
-     <link rel="stylesheet" href="assets/css/scrollbar.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
-     <link rel="manifest" href="./favicon_io/site.webmanifest">
+     <link rel="stylesheet" href="assets/css/base.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
      <div class="app">
-          
           <div class="container">
-
-               <header class="header">
-                    <div class="logo">
-                         <img src="assets/img/LOGO.png" alt="" class="logo-img">
+               <div class="left-side">
+                    <div class="btn-top">
+                         
                     </div>
-     
-                    <div class="menu-icon-box">
-                         <a href="https://youtu.be/xvFZjo5PgG0?si=914Cv2fhTaUnXDqc" class="icon home">
-                              <i class="fa-solid fa-house"></i>
-                         </a>
-     
-                         <a href="https://youtu.be/xvFZjo5PgG0?si=914Cv2fhTaUnXDqc" class="icon friend">
-                              <i class="fa-solid fa-user-group"></i>
-                         </a>
-     
-                         <a href="https://youtu.be/xvFZjo5PgG0?si=914Cv2fhTaUnXDqc" class="icon connect">
-                              <i class="fa-brands fa-connectdevelop"></i>
-                         </a>
-     
-                         <a href="https://youtu.be/xvFZjo5PgG0?si=914Cv2fhTaUnXDqc" class="icon chat current-tab">
-                              <i class="fa-brands fa-rocketchat"></i>
-                         </a>
-     
-                         <a href="https://youtu.be/xvFZjo5PgG0?si=914Cv2fhTaUnXDqc" class="icon user">
-                              <i class="fa-solid fa-user"></i>
-                         </a>
-                    </div>
-               </header>
 
-               <div class="content">
-                    <div class="left-sidebar">
-                         <!-- SEARCH BAR -->
-                         <div class="search-bar">
-                              <div class="menu-icon">
-                                   <i class="fa-solid fa-bars"></i>
+                    <div class="btn-center">
+                         <div class="btn-login-signup">
+                              <a href="" class="login status-current-tab">Login</a>
+                              <br>
+                              <a href="" class="sign-up">Sign up</a>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="right-size">
+                    <div class="content">
+                         <div class="logo-center">
+                              <img src="assets/img/LOGO.png" alt="" class="logo-img">
+                         </div>
+
+                         <div class="login-box">
+                              <div class="inp user-name">
+                                   <i class="fa-solid fa-user"></i>
+                                   <input type="text" placeholder="Email">
                               </div>
-                              
-                              <div class="search-box">
-                                   <i class="fa-solid fa-magnifying-glass"></i>
-                                   <input type="text" class="search" placeholder="Search">
+
+                              <div class="inp password">
+                                   <i class="fa-solid fa-lock"></i>
+                                   <input type="password" placeholder="Password">
                               </div>
                          </div>
 
-                         <!-- CHAT LIST -->
-                         <div class="chats-list">
-                              <div class="chat-item status-unread">
-                                   <a href="" class="avatar">
-                                        <img src="assets/img/avatar-1.jpg" alt="avatar" class="avatar-img">
-                                   </a>
-
-                                   <div class="text">
-                                        <div class="text-top">
-                                             <h2 class="name">Nguyễn Huỳnh Bảo Trọng</h2>
-                                             <p class="time-last-msg">19:48</p>
-                                        </div>
-
-                                        <div class="text-bottom">
-                                             <p class="last-msg">Ok, see you later</p>
-                                             <p class="unread">1</p>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="chat-item status-unread">
-                                   <a href="" class="avatar">
-                                        <img src="assets/img/avatar-2.jpg" alt="avatar" class="avatar-img">
-                                   </a>
-
-                                   <div class="text">
-                                        <div class="text-top">
-                                             <h2 class="name">Trần Thị Thu An</h2>
-                                             <p class="time-last-msg">15:42</p>
-                                        </div>
-
-                                        <div class="text-bottom">
-                                             <p class="last-msg">I LOVE YOU <i style="font-size: 13px; color: red;" class="fa-solid fa-heart"></i></p>
-                                             <p class="unread">3</p>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="chat-item status-unread">
-                                   <a href="" class="avatar">
-                                        <img src="assets/img/fpt-logo.jpg" alt="avatar" class="avatar-img">
-                                   </a>
-
-                                   <div class="text">
-                                        <div class="text-top">
-                                             <h2 class="name">FPT University</h2>
-                                             <p class="time-last-msg">13:08</p>
-                                        </div>
-
-                                        <div class="text-bottom">
-                                             <p class="last-msg">Bạn đã nhận được cóc vàng từ FPT...</p>
-                                             <p style="" class="unread">3</p>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="chat-item current-chat">
-                                   <a href="" class="avatar">
-                                        <img src="https://media.licdn.com/dms/image/D5603AQH3brgZwhRbPA/profile-displayphoto-shrink_800_800/0/1711637298238?e=1717027200&v=beta&t=Lrqu3CC6iiNN51TsSJltvke94yyym5f3dQbcInYkpbA" alt="avatar" class="avatar-img">
-                                   </a>
-
-                                   <div class="text">
-                                        <div class="text-top">
-                                             <h2 class="name">Việt Hoàng</h2>
-                                             <p class="time-last-msg">13:08</p>
-                                        </div>
-
-                                        <div class="text-bottom">
-                                             <p class="last-msg">You: Quên nyc đi :)))</p>
-                                             <p style="display: none;" class="unread">3</p>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="chat-item">
-                                   <a href="" class="avatar">
-                                        <img src="assets/img/avatar-truong-huy.jpg" alt="avatar" class="avatar-img">
-                                   </a>
-
-                                   <div class="text">
-                                        <div class="text-top">
-                                             <h2 class="name">Lê Phạm Trường Huy</h2>
-                                             <p class="time-last-msg">13:08</p>
-                                        </div>
-
-                                        <div class="text-bottom">
-                                             <p class="last-msg">Okeee</p>
-                                             <p style="display: none;" class="unread">3</p>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="chat-item status-unread">
-                                   <a href="" class="avatar">
-                                        <img src="assets/img/avatar-kim-long.jpg" alt="avatar" class="avatar-img">
-                                   </a>
-
-                                   <div class="text">
-                                        <div class="text-top">
-                                             <h2 class="name">Hoàng Kim Long</h2>
-                                             <p class="time-last-msg">13:08</p>
-                                        </div>
-
-                                        <div class="text-bottom">
-                                             <p class="last-msg">Sent a photo.</p>
-                                             <p style="" class="unread">9+</p>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="chat-item">
-                                   <a href="" class="avatar">
-                                        <img src="assets/img/avatar-nhat-hao.jpg" alt="avatar" class="avatar-img">
-                                   </a>
-
-                                   <div class="text">
-                                        <div class="text-top">
-                                             <h2 class="name">Nhật Hào</h2>
-                                             <p class="time-last-msg">13:08</p>
-                                        </div>
-
-                                        <div class="text-bottom">
-                                             <p class="last-msg">Reacted <i style="font-size: 13px; color: red;" class="fa-solid fa-heart"></i> to your message</p>
-                                             <p style="display: none;" class="unread">3</p>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="chat-item">
-                                   <a href="" class="avatar">
-                                        <img src="assets/img/avatar-elon.jpg" alt="avatar" class="avatar-img">
-                                   </a>
-
-                                   <div class="text">
-                                        <div class="text-top">
-                                             <h2 class="name">Elon Musk</h2>
-                                             <p class="time-last-msg">13:08</p>
-                                        </div>
-
-                                        <div class="text-bottom">
-                                             <p class="last-msg">Do you want to go to Mars with me?</p>
-                                             <p style="display: none;" class="unread">3</p>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="chat-item">
-                                   <a href="" class="avatar">
-                                        <img src="assets/img/avatar-default-male.jpg" alt="avatar" class="avatar-img">
-                                   </a>
-
-                                   <div class="text">
-                                        <div class="text-top">
-                                             <h2 class="name">USER</h2>
-                                             <p class="time-last-msg">00:00</p>
-                                        </div>
-
-                                        <div class="text-bottom">
-                                             <p class="last-msg">**************</p>
-                                             <p style="display: none;" class="unread">3</p>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="chat-item">
-                                   <a href="" class="avatar">
-                                        <img src="assets/img/avatar-default-male.jpg" alt="avatar" class="avatar-img">
-                                   </a>
-
-                                   <div class="text">
-                                        <div class="text-top">
-                                             <h2 class="name">USER</h2>
-                                             <p class="time-last-msg">00:00</p>
-                                        </div>
-
-                                        <div class="text-bottom">
-                                             <p class="last-msg">********</p>
-                                             <p style="display: none;" class="unread">3</p>
-                                        </div>
-                                   </div>
-                              </div>
+                         <div class="btn">
+                              <a href="chat-page.html" class="btn-login">Login</a>
+                              <br>
+                              <a class="forgot-password" href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Forgot password?</a>
                          </div>
                     </div>
-
-                    <div class="msg-box">
-                         <div class="head-chat">
-                              <div class="info">
-                                   <div class="avatar-inside">
-                                        <img src="https://media.licdn.com/dms/image/D5603AQH3brgZwhRbPA/profile-displayphoto-shrink_800_800/0/1711637298238?e=1717027200&v=beta&t=Lrqu3CC6iiNN51TsSJltvke94yyym5f3dQbcInYkpbA" alt="" class="avatar-inside-img">
-                                   </div>
-                                   <div class="name-box">
-                                        <h2 class="name">Việt Hoàng</h2>
-                                        <p class="status">last seen 5 mins ago</p>
-                                   </div>
-                              </div>
-
-                              <div class="button">
-                                   <a href="" class="btn btn-break"><i class="fa-solid fa-heart-crack"></i></a>
-                                   <a href="" class="btn btn-call"><i class="fa-solid fa-phone"></i></a>
-                                   <a href="" class="btn btn-more"><i class="fa-solid fa-circle-info"></i></a>
-                              </div>
-                         </div>
-
-                         <div class="box-chat">
-                              <div class="chat-content">
-                                   <div class="text-container"> 
-                                        <div class="text-box msg-sent">
-                                             <p class="chat-msg-text ">Em quên người yêu cũ chưa?</p>
-                                        </div>
-                                        
-                                        <div class="text-box msg-received">
-                                             <p class="chat-msg-text ">Sắp quên rồi đó đừng có nhắc nữa <i style="color: rgb(255, 140, 0); font-size: 15px;" class="fa-solid fa-face-sad-cry"></i></p>
-                                        </div>
-
-                                        <div class="text-box msg-received">
-                                             <p class="chat-msg-text ">Buồn lắm ngày nào cũng khóc <i style="color: rgb(255, 140, 0); font-size: 15px;" class="fa-solid fa-face-sad-cry"></i></p>
-                                        </div>
-
-                                        <div class="text-box msg-sent">
-                                             <p class="chat-msg-text ">Vui lên, đừng buồn nữa <i style="color: rgba(0, 0, 0, 0.66); font-size: 15px;" class="fa-solid fa-face-smile-beam"></i></p>
-                                        </div>
-
-                                        <div class="text-box msg-sent">
-                                             <p class="chat-msg-text ">Hãy vui lên</p>
-                                        </div>
-                                        
-                                        <div class="text-box msg-received">
-                                             <p class="chat-msg-text ">Chat gì đi không biết chat gì nè <i style="color: rgb(255, 140, 0); font-size: 15px;" class="fa-solid fa-face-sad-cry"></i></p>
-                                        </div>
-
-                                        <div class="text-box msg-received">
-                                             <p class="chat-msg-text ">Đoạn này là tại thằng FE nó bị bí<i style="color: rgb(255, 140, 0); font-size: 15px;" class="fa-solid fa-face-sad-cry"></i></p>
-                                        </div>
-
-                                        <div class="text-box msg-sent">
-                                             <p class="chat-msg-text ">Nó ghi đại <i style="color: rgba(0, 0, 0, 0.66); font-size: 15px;" class="fa-solid fa-face-smile-beam"></i></p>
-                                        </div>
-                                        <div class="text-box msg-sent">
-                                             <p class="chat-msg-text ">Buồn ngủ lắm rồi</p>
-                                        </div>
-                                        
-                                        <div class="text-box msg-received">
-                                             <p class="chat-msg-text ">hahahahaha <i style="color: rgb(255, 140, 0); font-size: 15px;" class="fa-solid fa-face-sad-cry"></i></p>
-                                        </div>
-
-                                        <div class="text-box msg-received">
-                                             <p class="chat-msg-text ">********** <i style="color: rgb(255, 140, 0); font-size: 15px;" class="fa-solid fa-face-sad-cry"></i></p>
-                                        </div>
-
-                                        <div class="text-box msg-sent">
-                                             <p class="chat-msg-text ">đi ngủ hoy <i style="color: rgba(0, 0, 0, 0.66); font-size: 15px;" class="fa-solid fa-face-smile-beam"></i></p>
-                                        </div>
-
-                                        <div class="text-box msg-sent">
-                                             <p class="chat-msg-text ">Vui lên, đừng buồn nữa <i style="color: rgba(0, 0, 0, 0.66); font-size: 15px;" class="fa-solid fa-face-smile-beam"></i></p>
-                                        </div>
-                                        <div class="text-box msg-sent">
-                                             <p class="chat-msg-text ">Em quên người yêu cũ chưa?</p>
-                                        </div>
-                                        
-                                        <div class="text-box msg-received">
-                                             <p class="chat-msg-text ">Sắp quên rồi đó đừng có nhắc nữa <i style="color: rgb(255, 140, 0); font-size: 15px;" class="fa-solid fa-face-sad-cry"></i></p>
-                                        </div>
-
-                                        <div class="text-box msg-received">
-                                             <p class="chat-msg-text ">Buồn lắm ngày nào cũng khóc <i style="color: rgb(255, 140, 0); font-size: 15px;" class="fa-solid fa-face-sad-cry"></i></p>
-                                        </div>
-
-                                        <div class="text-box msg-sent">
-                                             <p class="chat-msg-text ">Quên nyc đi :))</p>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="footer-chat fixed">
-                                   <div class="input-msg">
-                                        <a class="btn-emotion" href="https://youtu.be/xvFZjo5PgG0?si=914Cv2fhTaUnXDqc" target="_blank">
-                                             <button class="fa-regular fa-face-smile"></button>
-                                             <button class="fa-solid fa-face-grin-tongue-squint"></button>
-                                        </a>
-                                        <input type="text" class="typing-box" placeholder="Message">
-                                        <div class="btn-sent">
-                                             <button  class="fa-solid fa-paper-plane"></button>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
                </div>
           </div>
-
-          <footer class="footer">
-
-          </footer>
-
      </div>
 </body>
 </html>

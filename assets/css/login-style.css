@@ -1,0 +1,165 @@
+html {
+     background-color: rgba(107, 107, 107, 0.167);
+}
+
+.app {
+     width: 100%;
+     height: 100%;
+}
+
+.container {
+     background-color: white;
+     transition-duration: 0.5s;
+     height: 86vh;
+     width: 85vw;
+     box-shadow: 0 0 80px rgba(0, 0, 0, 0.288);
+     margin: 7vh auto;
+     border-radius: 10px;
+     display: flex;
+}
+
+.container .left-side {
+     width: 35%;
+     height: 100%;
+     border-radius: 10px 0 0 10px;
+     background-image: url(https://w0.peakpx.com/wallpaper/775/654/HD-wallpaper-orange-hq-yellow-and-orange-aesthetic.jpg);
+     background-size: cover;
+     background-position: top right;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     transition-duration: 0.6s;
+     box-shadow: 0 0 9px rgba(0, 0, 0, 0.416);
+}
+
+.container .left-side:hover {
+     width: 40%;
+     background-position: top left;
+}
+
+.container .btn-center {
+
+}
+
+.left-side .btn-top {
+
+}
+
+.left-side .btn-center {
+
+}
+
+.btn-center a {
+     font-weight: bold;
+     font-size: 20px;
+     background-color: rgba(255, 255, 255, 0);
+     margin: 10px 0;
+     padding: 30px 25px;
+     display: inline-block;
+     min-width: 150px;
+     text-align: center;
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     border-radius: 20px 0 0 20px;
+     transition-duration: 0.5s;
+}
+
+.btn-center a:hover {
+     background-color: white;
+     color: orange;
+     box-shadow: 0 0 8px rgba(0, 0, 0, 0.307);
+     padding-left: 40px;
+}
+
+.btn-center .status-current-tab {
+     background-color: white;
+     color: orange;
+     box-shadow: 0 0 8px rgba(0, 0, 0, 0.307);
+}
+
+.container .right-size {
+     width: 60%;
+     height: 100%;
+}
+
+.right-size .content {
+     height: 70%;
+     width: 70%;
+     margin: 5% auto;
+}
+
+.right-size .logo-center {
+     width: 140px;
+     height: 140px;
+     margin: 0 auto;
+     padding-top: 20px;
+}
+
+.right-size .logo-img {
+     height: 140px;
+     width: 140px;
+     border-radius: 60%;
+}
+
+.right-size .login-box {
+     margin-top: 15%;
+     text-align: center;
+}
+
+.login-box .inp {
+     position: relative;
+     width: 270px;
+     height: 40px;
+     margin: 15px auto;
+}
+
+.login-box input {
+     opacity: 75%;
+     width: 100%;
+     height: 40px;
+     font-size: 16px;
+     margin-top: 10px;
+     border: none;
+     border-bottom: 1px solid black;
+     padding-left: 30px;
+}
+
+.login-box .fa-solid {
+     font-size: 15px;
+     position: absolute;
+     top: 25px;
+     left: 3px;
+}
+
+.content .btn {
+     margin-top: 60px;
+     text-align: center;
+}
+
+.content .btn-login {
+     font-size: 18px;
+     text-decoration: none;
+     background-color: rgba(255, 119, 0, 0.625);
+     color: white;
+     padding: 15px 40px;
+     border-radius: 10px;
+     box-shadow: 0 0 8px rgba(0, 0, 0, 0.384);
+     transition-duration: 0.5s;
+}
+
+.content .btn-login:hover {
+     padding: 15px 110px;
+     background-color: rgb(255, 119, 0);
+}
+
+.forgot-password {
+     display: inline-block;
+     padding-top: 30px;
+     text-decoration: none;
+     color: rgb(0, 0, 0);
+     opacity: 70%;
+}
+
+.forgot-password:hover {
+     color: rgb(255, 115, 0);
+}
